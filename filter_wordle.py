@@ -19,4 +19,4 @@ def exact_words(filename: str, size: int=5):
     with open(filename, 'r') as f:
         lines = f.readlines()
     lines = [lines.strip() for line in lines]
-    return lines
+    return [word for word in lines if len(word) == size]
