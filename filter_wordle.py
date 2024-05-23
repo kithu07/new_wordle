@@ -29,4 +29,4 @@ def extract_words(filename: str, size: int=5):
         return []
 
 sowpod_words = extract_words("sowpods_words.txt")
-#print(matches(sowpod_words, 'WORST', 'RRYR'))
+#print(matches(sowpod_words, 'WORST', 'RRYRR'))
