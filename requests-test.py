@@ -23,6 +23,6 @@ current_feedback = ''
 guess_data = {"id": id, "guess": random.choice(matches(sowpod_words, current_guess, current_feedback))}
 
 while (current_feedback != 'GGGGG' and current_feedback != None):
-    api_feedback = s.post(...)
+    api_feedback = s.post('https://we6.talentsprint.com/game/guess', data=json.dumps(guess_data), headers=headers)
     current_feedback = api_feedback['feedback']
-    next_guess = choose()
+    next_guess = matches()
